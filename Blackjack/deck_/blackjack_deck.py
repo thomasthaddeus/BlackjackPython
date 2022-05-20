@@ -12,11 +12,8 @@ class Card:
         """Prints the individual cards_per_deck."""
         print(f"The {self.value} of {self.suit}'s")
 
-
-
-class Deck(Card):
-    """Blackjack deck object"""
-
+class Deck:
+    """Blackjack deck object."""
     def __init__(self):
         self.cards = []
         self.build_cards()
@@ -42,12 +39,6 @@ class Deck(Card):
         """Draws the card from cards list."""
         return self.cards.pop()
 
-    def draw(self, deck):
-        """Adds the card to the hand."""
-        self.hand.append(deck.draw_card())
-        return self.hand
-
-
 
 class Player:
     """A player class"""
@@ -64,4 +55,3 @@ class Player:
         """Prints the players hand."""
         for card in self.hand:
             card.show()
-
