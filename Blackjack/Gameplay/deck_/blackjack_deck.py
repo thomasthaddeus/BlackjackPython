@@ -2,8 +2,10 @@
 
 import random
 
+
 class Card:
     """Defines the individual cards_per_deck."""
+
     def __init__(self, value, suit):
         self.value = value
         self.suit = suit
@@ -12,8 +14,10 @@ class Card:
         """Prints the individual cards_per_deck."""
         print(f"The {self.value} of {self.suit}'s")
 
+
 class Deck:
     """Blackjack deck object."""
+
     def __init__(self):
         self.cards = []
         self.build_cards()
@@ -31,7 +35,7 @@ class Deck:
 
     def shuffle(self):
         """Shuffles the deck of cards"""
-        for i in range(len(self.cards) -1, 0, 1):
+        for i in range(len(self.cards) - 1, 0, 1):
             rand = random.randint(0, i)
             self.cards[i], self.cards[rand] = self.cards[rand], self.cards[i]
 
@@ -42,6 +46,7 @@ class Deck:
 
 class Player:
     """A player class"""
+
     def __init__(self, name):
         self.name = name
         self.hand = []

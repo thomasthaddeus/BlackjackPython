@@ -1,7 +1,9 @@
 """This is where the game is played."""
 
+
 class Game:
     """Class for managing the game."""
+
     def __init__(self, hand, hit, card_value):
         self.hand = hand
         self.hit = hit
@@ -21,7 +23,6 @@ class Game:
                 start_game()
             else:
                 print('Please type "yes" or "no"')
-
 
     def start_game(self):
         """Start the game."""
@@ -67,17 +68,3 @@ class Player_Actions:
             elif self.split(action):
                 split()
             elif
-
-
-
-
-
-
-
-
-
-
-
-
-
-
