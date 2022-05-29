@@ -1,6 +1,12 @@
 """Graphing results in matplotlib to show different strategies."""
 # Source: https://gist.github.com/marcosan93/7185c6549128fc329337d027f4a3e16c
 
+import ../counting_values.py
+import ../counting.py
+import ../dealer_fn.py
+import ../functions.py
+import ../game_simulation.py
+import ../player_move.py
 
 import matplotlib.pyplot as plt
 

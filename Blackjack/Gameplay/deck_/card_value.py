@@ -1,37 +1,20 @@
-def card_value(card):
-    """Returns the integer value of a single card."""
+"""Module for handling card counter."""
 
-    rank = card[0]
-    if rank in ranks[0:-4]:
-        return int(rank)
-    elif rank is 'ACE':
-        return 11
-    else:
-        return 10
-
-def hand_value(hand):
-    """Returns the integer value of a set of cards."""
-
-    # Naively sum up the cards in the deck.
-    tmp_value = sum(card_value(_) for _ in hand)
-    # Count the number of Aces in the hand.
-    num_aces = len([_ for _ in hand if _[0] is 'ACE'])
-
-    # Aces can count for 1, or 11. If it is possible to bring the value of 
-    #the hand under 21 by making 11 -> 1 substitutions, do so.
-    while num_aces > 0:
-
-        if tmp_value > 21 and 'ACE' in ranks:
-            tmp_value -= 10
-            num_aces -= 1
-        else:
-            break
-
-    # Return a string and an integer representing the value of the hand. If 
-    # the hand is bust, return 100.
-    if tmp_value < 21:
-        return [str(tmp_value), tmp_value]
-    elif tmp_value == 21:
-        return ['Blackjack!', 21]
-    else:
-        return ['Bust!', 100]
+def card_counter(self, card_value):
+    """Returns the value of the card in Blackjack."""
+    self.card_value = {'Ace-Lo':   1,
+                       'Deuce':    2,
+                       'Three':    3,
+                       'Four':     4,
+                       'Five':     5,
+                       'Six':      6,
+                       'Seven':    7,
+                       'Eight':    8,
+                       'Nine':     9,
+                       'Ten':      10,
+                       'Jack':     10,
+                       'Queen':    10,
+                       'King':     10,
+                       'Ace-High': 11}
+    for key in card_value:
+        return card_value[key]

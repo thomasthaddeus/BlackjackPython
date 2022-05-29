@@ -1,2 +1,10 @@
 # Custom Dictionary Words
+ameritrade
+anreturn
+cusip
 Gameplay
+indx
+listof
+printlist
+returnamount
+yieldper
