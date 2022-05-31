@@ -1,6 +1,5 @@
 """Blackjack, by Al Sweigart al@inventwithpython.com
-The classic card game also known as 21. (This version doesn't have
-splitting or insurance.)
+The classic card game also known as 21. (This version doesn't have splitting or insurance.)
 More info at: https://en.wikipedia.org/wiki/Blackjack
 This code is available at https://nostarch.com/big-book-small-python-programming
 Tags: large, game, card game"""
