@@ -1,12 +1,21 @@
 # Custom Dictionary Words
 ameritrade
 anreturn
+Blackfriday
 cusip
 dataf
 dhit
 Gameplay
+ijklmnop
 indx
+kaylajones
 listof
+Neue
+nocaption
 printlist
+qrstuvwx
 returnamount
+rgba
+uncollapsed
+Uncollapsed
 yieldper
