@@ -3,7 +3,8 @@
 import os
 import random
 
-with open("modules/hard_hand.txt", 'r', encoding = 'utf-8') as f:
+with open("D:/Repositories/blackjack_project_team_repo/modules/dictionary/hard_hand.txt",
+          'r', encoding = 'utf-8') as f:
     data = f.readlines()
 
 DEALER = random.randint(2, 12)

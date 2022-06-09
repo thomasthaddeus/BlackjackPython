@@ -211,7 +211,7 @@ cards_hh = {
 }
 
 
-DEALER = random.randint(2, 12)
+DEALER_A = random.randint(2, 12)
 
 
 def main():
@@ -222,7 +222,7 @@ def main():
 def hard_hand(card1, card2):
     """Hard Hand decision table"""
     comb = card1 + card2
-    result = print(f"\n{cards_hh[comb].get(DEALER)}\n")
+    result = print(f"\n{cards_hh[comb].get(DEALER_A)}\n")
     if card1 == card2:
         print(f"First Card is: {card1}")
         print(f"Second Card is: {card2}")
@@ -230,11 +230,21 @@ def hard_hand(card1, card2):
         return result
 
 
+def soft_hand(card1, card2):
+    """Soft Hand decision table
+    To Be a soft hand an Ace has to be present."""
+    comb = card1 + card2
+
+
+def split_hand(card1, card2):
+    """"""
+
+
 def print_block():
     """Prints the card block"""
     clear = lambda: os.system("cls")
     clear()
-    hard_hand(DEALER, DEALER)
+    hard_hand(DEALER_A, DEALER_B)
 
 
 if __name__ == "__main__":

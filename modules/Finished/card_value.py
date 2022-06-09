@@ -2,8 +2,7 @@
 
 def card_counter(self, card_value):
     """Returns the value of the card in Blackjack."""
-    self.card_value = {'Ace-Lo':   1,
-                       'Deuce':    2,
+    self.card_value = {'Deuce':    2,
                        'Three':    3,
                        'Four':     4,
                        'Five':     5,
