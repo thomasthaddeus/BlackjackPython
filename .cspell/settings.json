@@ -1,0 +1,23 @@
+{
+    "cSpell.words": [
+        "Batchelder’s",
+        "elif",
+        "isdecimal",
+        "ljust",
+        "ouble",
+        "rjust",
+        "Sweigart",
+        "tand"
+    ],
+    "cSpell.customDictionaries": {
+        "custom-dictionary-workspace": {
+            "name": "custom-dictionary-workspace",
+            "path": "${workspaceFolder:blackjack_project_team_repo}/.cspell/custom-dictionary-workspace.txt",
+            "addWords": true,
+            "scope": "workspace"
+        }
+    },
+    "python.linting.pylintEnabled": true,
+    "python.linting.flake8Enabled": false,
+    "python.linting.enabled": true
+}

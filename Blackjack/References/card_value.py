@@ -1,6 +1,5 @@
 def card_value(card):
     """Returns the integer value of a single card."""
-
     rank = card[0]
     if rank in ranks[0:-4]:
         return int(rank)

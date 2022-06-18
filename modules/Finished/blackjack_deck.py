@@ -1,6 +1,22 @@
 """Builds a deck of cards from a list of cards."""
 
+###############################################
+#               Thaddeus Thomas               #
+#                June 10, 2022                #
+#               Blackjack Deck                #
+###############################################
+
 import random
+
+
+def main():
+    """Main"""
+    deck = Deck()
+    deck.shuffle()
+    guy = Player('Guy')
+    guy.draw(deck)
+    card = deck.draw_card()
+    card.print_card()
 
 
 class Card:
@@ -10,7 +26,7 @@ class Card:
         self.value = value
         self.suit = suit
 
-    def show(self):
+    def print_card(self):
         """Prints the individual cards_per_deck."""
         print(f"The {self.value} of {self.suit}'s")
 
@@ -24,20 +40,20 @@ class Deck:
 
     def build_cards(self):
         """Iterates a deck of cards"""
-        for suit in list('Clubs', 'Diamonds', 'Hearts', 'Spades'):
-            for card in list('Ace', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'):
-                self.cards.append(Card(suit, card))
+        val = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
+        suit = ["Clubs", "Diamonds", "Hearts", "Spades"]
+        self.cards = [[s for s in suit] for v in val]
 
-    def show(self):
+    def print_card(self):
         """Prints the deck of cards."""
-        for card in self.cards:
-            card.show()
+        for i in self.cards:
+            return i.print_card()
 
     def shuffle(self):
         """Shuffles the deck of cards"""
-        for i in range(len(self.cards) - 1, 0, 1):
-            rand = random.randint(0, i)
-            self.cards[i], self.cards[rand] = self.cards[rand], self.cards[i]
+        for i in range(len(self.cards)):
+            ran = random.randint(0, i)
+            self.cards[i], self.cards[ran] = self.cards[ran], self.cards[i]
 
     def draw_card(self):
         """Draws the card from cards list."""
@@ -56,7 +72,11 @@ class Player:
         self.hand.append(deck.draw_card())
         return self
 
-    def show(self):
+    def print_card(self):
         """Prints the players hand."""
         for card in self.hand:
-            card.show()
+            card.print_card()
+
+
+if __name__ == "__main__":
+    main()
