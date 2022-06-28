@@ -43,8 +43,3 @@ def strategy1(player_hand, dealer_hand):
                 return 'hit'
             else:
                 return 'hit'
-
-
-
-
-
