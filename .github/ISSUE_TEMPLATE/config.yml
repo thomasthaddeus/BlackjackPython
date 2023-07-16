@@ -1,7 +1,7 @@
 blank_issues_enabled: false
 contact_links:
   - name: Ask a question
-    url: https://yourwebsite.com/contact
+    url: https://apparellnstuff.me/Blackjack-pygame
     about: Please ask and answer questions here.
 issue_templates:
   - name: Bug report
