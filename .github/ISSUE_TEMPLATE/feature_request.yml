@@ -1,0 +1,73 @@
+name: Feature Request
+description: Suggest an idea for this project
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Before you start
+        Check if your idea is already suggested by searching issues (open/closed).
+        If it exists, please contribute to the existing one.
+        
+  - type: textarea
+    id: feature-summary
+    attributes:
+      label: Summary
+      description: Briefly describe the feature you want to be implemented.
+    validations:
+      required: true
+
+  - type: textarea
+    id: feature-motivation
+    attributes:
+      label: Motivation
+      description: Why do you think this feature will be beneficial?
+    validations:
+      required: true
+
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Detailed Description
+      description: Provide a detailed description of the proposed feature.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: existing-issues
+    attributes:
+      label: Existing issues
+      description: Did you check if this request has been already reported?
+      options:
+        - label: I have checked existing issues (open and closed) for duplicates
+          required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Screenshots / Mockups
+        If applicable, add screenshots or mockups to help explain your feature request.
+        Please upload these separately and provide the URLs in your response below.
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshot / Mockup URLs
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: What alternative solutions or features have you considered?
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Any other context or information that might be helpful.
+    validations:
+      required: false
