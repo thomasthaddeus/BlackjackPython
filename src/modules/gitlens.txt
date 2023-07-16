@@ -1,1 +1,0 @@
-vscode://eamodio.gitlens/did-authenticate?gkstate=2560a6c6-ceca-464d-b2f5-a8829324af2a&windowId=1&code=3f0953ffa7ff792b60caffc43fff981b16ea6763&referrer=gitlens
